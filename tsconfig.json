@@ -1,7 +1,11 @@
 {
   "files": [],
-  "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
-  ]
+  "references": [{"path": "./tsconfig.app.json"}, {"path": "./tsconfig.node.json"}],
+  "compilerOptions": {
+    "baseUrl": "./src", // Important for resolving paths
+    "paths": {
+      "@/*": ["./*"] // Tell TypeScript to resolve '@/*' to './*'
+    }
+    // ... other compiler options
+  }
 }

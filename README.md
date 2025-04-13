@@ -1,54 +1,31 @@
-# React + TypeScript + Vite
+# React + TypeScript Component Library
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my React and TypeScript component library! This project was built as part of a solo challenge for the Scrimba Frontend Developer Career Path. It’s my first dive into TypeScript and my first time using Vite — which I chose because it’s fast and all the rage right now! 😄
 
-Currently, two official plugins are available:
+## About the Project
+This library contains reusable React components designed with TypeScript for type safety and better developer experience. The goal was to create a solid foundation for building UI elements that are modular and easy to maintain.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+- Built with **React** and **TypeScript** for type-safe components
+- Powered by **Vite** for a fast development experience
+- Modular and reusable UI components (cards, testimonials, etc..)
+- Simple and clean project setup for learning and experimentation
 
-## Expanding the ESLint configuration
+## Getting Started
+1. Clone the repo: `git clone https://github.com/yilkur/component-library.git`
+2. Install dependencies: `npm install`
+3. Run the dev server: `npm run dev`
+4. Explore the components in the `src/components` folder!
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## What I Learned
+- Writing type-safe React components with TypeScript
+- Setting up a project with Vite for blazing-fast builds
+- Structuring a component library for reusability
+- Overcoming challenges like TS Types and configuring eslint
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Next Steps
+- Add more components to expand the library
+- Improve documentation with usage examples
+- Explore advanced TypeScript features for better type inference
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+Thanks for checking out my project! Feedback is welcome as I continue learning TypeScript and React.
